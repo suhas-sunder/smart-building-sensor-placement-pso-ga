@@ -60,3 +60,11 @@ pip install numpy matplotlib
 
 
 ```
+
+### Execution
+
+This project runs in:
+- **JupyterLab** (recommended)
+- **Google Colab** (with minor path adjustments)
+- **Standard Python** by converting notebooks or cells to `.py` scripts
+
