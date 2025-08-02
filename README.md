@@ -9,3 +9,52 @@
 3rd Quang Thong Phung
 
 4th Suhas Sunder
+
+---
+
+This repository implements a two-phase optimization framework for smart indoor environments. The system uses a hybrid Particle Swarm Optimization (PSO) and Genetic Algorithm (GA) to determine:
+
+1. Optimal static placement of motion sensors over a 2D floor layout (Phase One)
+2. Time-aware binary activation schedules for energy-efficient monitoring (Phase Two)
+
+Sensor layouts are generated based on polygonal room geometry extracted from the HouseExpo dataset. Activity-aware activation masks are computed using synthetic occupancy weights informed by real-world behavior patterns.
+
+---
+
+## Demo Video
+
+A live demonstration of the system is available on YouTube: https://youtu.be/jTwuYmSXz6c
+
+---
+
+## Phase Overview
+
+### Phase One: PSO + GA Sensor Placement
+
+- Optimizes sensor coordinates \((x, y, r)\) to maximize layout coverage.
+- Penalizes redundant coverage and excessive sensor radius.
+- Outputs are saved to `phase1_sensors.json`.
+
+### Phase Two: PSO + GA Activation Scheduling
+
+- Uses fixed sensor layout from Phase One.
+- For each of four time blocks (Morning, Afternoon, Evening, Night), computes a binary activation mask.
+- Optimization balances weighted occupancy coverage vs. active sensor cost.
+- Outputs are saved to `phase2_results.json`.
+
+---
+
+## How to Run
+
+### Prerequisites
+
+- Python 3.7+
+- `numpy`, `matplotlib`
+
+Install with:
+
+```bash
+pip install numpy matplotlib
+
+
+```
