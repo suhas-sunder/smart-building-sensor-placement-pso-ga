@@ -1,0 +1,43 @@
+{
+	"info": {
+		"_postman_id": "7fba2422-17fa-498d-b3c0-a35413f646b7",
+		"name": "Person",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "41713611"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:5000//layouts/floor-1-tt/sensors",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"009\",\r\n  \"name\": \"Person A\",\r\n  \"floor\": \"floor-abc123\",\r\n  \"path\": [\r\n    {\"x\": 10, \"y\": 20},\r\n    {\"x\": 30, \"y\": 40},\r\n    {\"x\": 50, \"y\": 60}\r\n  ],\r\n  \"currentIndex\": 0,\r\n  \"direction\": 1,\r\n  \"color\": \"#FF5733\",\r\n  \"animationSpeed\": 1.5,\r\n  \"progress\": 0.0\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:5000//layouts/5/persons"
+			},
+			"response": []
+		},
+		{
+			"name": " http://127.0.0.1:5000//layouts/floor-1-tt/sensors",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:5000//layouts/5/persons"
+			},
+			"response": []
+		}
+	]
+}

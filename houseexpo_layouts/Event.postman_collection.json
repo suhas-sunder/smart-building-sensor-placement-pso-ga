@@ -1,0 +1,43 @@
+{
+	"info": {
+		"_postman_id": "435d1053-069b-49a1-b6b8-7d91c8451e12",
+		"name": "Event",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "41713611"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:5000/session",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": \"log-12345678-abcd-efgh-ijkl-1234567890ab\",\r\n  \"floor\": \"floor-abc123\",\r\n  \"nodeId\": \"sensor-001\",\r\n  \"nodeType\": \"sensor\",\r\n  \"eventType\": \"motion_detected\",\r\n  \r\n  \"message\": \"Motion detected at entrance\"\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:5000//layouts/5/events"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/session/1d6c0da1-050c-4d5a-b48e-b63bf305697d",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:5000//layouts/5/events"
+			},
+			"response": []
+		}
+	]
+}

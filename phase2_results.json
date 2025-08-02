@@ -1,0 +1,94 @@
+{
+  "Morning": {
+    "active_mask": [
+      false,
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "active_count": 1,
+    "weighted_coverage": 376.0,
+    "overlap_penalty": 0.0,
+    "runtime_s": 1.292
+  },
+  "Afternoon": {
+    "active_mask": [
+      false,
+      true,
+      false,
+      false,
+      false,
+      true,
+      false,
+      false,
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "active_count": 3,
+    "weighted_coverage": 444.0,
+    "overlap_penalty": 0.0,
+    "runtime_s": 1.309
+  },
+  "Evening": {
+    "active_mask": [
+      false,
+      false,
+      true,
+      false,
+      false,
+      true,
+      false,
+      false,
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "active_count": 3,
+    "weighted_coverage": 820.0,
+    "overlap_penalty": 0.0,
+    "runtime_s": 1.28
+  },
+  "Night": {
+    "active_mask": [
+      false,
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      true,
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    "active_count": 3,
+    "weighted_coverage": 737.0,
+    "overlap_penalty": 0.0,
+    "runtime_s": 1.297
+  }
+}

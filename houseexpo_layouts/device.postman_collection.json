@@ -1,0 +1,61 @@
+{
+	"info": {
+		"_postman_id": "bd081a8c-8d84-4368-9b89-689c45f1f8fa",
+		"name": "device",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "41713611"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:60141/generate",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": "http://127.0.0.1:5000/layouts/5/devices"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000//layouts/floor-1-tt/devices",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "  \r\n{\r\n  \"id\": \"device-001\",\r\n  \"x\": 100.5,\r\n  \"y\": 200.0,\r\n  \"type\": \"light\",\r\n  \"label\": \"light-1\",\r\n  \"name\": \"Ceiling Light\",\r\n  \"device_rad\": 15.0,\r\n  \"connectivity\": [\"wifi\"],\r\n  \"compatibleSensors\": [\"motion\", \"light\"],\r\n  \"interferenceProtocols\": [\"bluetooth\"],\r\n  \"connectedSensorIds\": [\"sensor-123\"],\r\n  \"interferenceIds\": [\"device-002\"],\r\n  \"floor\": \"5\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:5000//layouts/5/devices"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000//layouts/floor-1-tt/devices/device-550",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://127.0.0.1:5000//layouts/5/devices/device-001"
+			},
+			"response": []
+		}
+	]
+}

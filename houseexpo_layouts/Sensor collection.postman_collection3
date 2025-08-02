@@ -1,0 +1,55 @@
+{
+	"info": {
+		"_postman_id": "ed75edc6-73a4-4641-ad7b-44f9e66395b7",
+		"name": "Sensor collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "41713611"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:5000//layouts/floor-1-tt/sensors",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": \"sensor-23\",\r\n  \"x\": 45.2,\r\n  \"y\": 78.9,\r\n  \"type\": \"motion\", \r\n  \"name\": \"motion-1\",\r\n  \"sensor_rad\": 15.0,\r\n  \"connectivity\": [\"bluetooth\", \"wifi\"],\r\n  \"connectedDeviceIds\": [\"device-001\", \"device-002\"],\r\n  \"interferenceIds\": [\"sensor-def456\"],\r\n  \"floor\": \"5\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:5000//layouts/5/sensors"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/layouts/floor-1-tt/sensors/sensor-006",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": "http://127.0.0.1:5000/layouts/5/sensors/sensor-23"
+			},
+			"response": []
+		},
+		{
+			"name": " http://127.0.0.1:5000//layouts/floor-1-tt/sensors",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:5000//layouts/floor-1-tt/sensors"
+			},
+			"response": []
+		}
+	]
+}
