@@ -12,6 +12,10 @@
 
 ---
 
+Our project utilizes the HouseExpo dataset found in this GitHub repository: https://github.com/TeaganLi/HouseExpo 
+
+---
+
 This repository implements a two-phase optimization framework for smart indoor environments. The system uses a hybrid Particle Swarm Optimization (PSO) and Genetic Algorithm (GA) to determine:
 
 1. Optimal static placement of motion sensors over a 2D floor layout (Phase One)
@@ -56,9 +60,7 @@ pso_ga_demo_video.mp4 is also avilable within this repo itself, however, due to 
 Install with:
 
 ```bash
-pip install numpy matplotlib
-
-
+pip install numpy matplotlib pprintpp
 ```
 
 ### Execution
