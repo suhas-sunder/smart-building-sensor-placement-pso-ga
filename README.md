@@ -25,6 +25,8 @@ Sensor layouts are generated based on polygonal room geometry extracted from the
 
 A live demonstration of the system is available on YouTube: https://youtu.be/jTwuYmSXz6c
 
+pso_ga_demo_video.mp4 is also avilable within this repo itself, however, due to GitHub's size limitations the video had to be compressed and includes a watermark. Therefore, I would recommend viewing the YouTube video instead.
+
 ---
 
 ## Phase Overview
