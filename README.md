@@ -63,10 +63,10 @@ Install with:
 pip install numpy matplotlib pprintpp
 ```
 
-If using Jupyer Lab or Google Colab, the code can be run directly within the application using the 'run' button.
+If using Jupyter Lab or Google Colab, the code can be run directly within the application using the 'run' button.
 <img width="1062" height="209" alt="image" src="https://github.com/user-attachments/assets/2722177d-72b3-4dbb-aa46-2d54112d2451" />
 
-The code files can also be copied into a .py file and run directly.
+Alternatively, each code file can also be copied into a unique .py file and run directly.
 
 Run the phase one code file first then, after successful complection, run phase 2. Please refer to the video for further instructions: https://youtu.be/jTwuYmSXz6c 
 
